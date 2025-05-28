@@ -1,0 +1,509 @@
+/* Fonte Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+  background-color: #464646; /* Cor de fundo padrão */
+}
+
+header,
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.header,
+.navbar {
+  font-weight: 800;
+  position: relative;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 20px;
+  position: relative;
+  font-weight: 800; /* Fonte Extra Bold */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os ícones */
+  font-size: 20px;
+  color: #000;
+  margin-left: 0; /* Garantir alinhamento à esquerda */
+}
+
+.navbar-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-icons i:hover {
+  color: #688e78; /* Cor ao passar o mouse */
+}
+
+.navbar-center {
+  flex-grow: 1; /* Faz essa seção ocupar o espaço central */
+  display: flex;
+  justify-content: center; /* Centraliza os links dentro dessa seção */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800; /* Fonte Extra Bold */
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #c7c7c7;
+  color: #000;
+}
+
+.navbar ul li a.active {
+  background-color: #edd5f7; /* Rosa */
+  color: #000000;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+/* Estilo para a seção principal */
+.project-info {
+  background-image: url("./IMAGENS/FUNDO PREDIO.png");
+  background-size: cover;
+  background-position: center;
+  width: 100vw; /* Garante que a imagem ocupe toda a largura da janela */
+  height: calc(100vh - 50px); /* Ajuste a altura conforme necessário */
+  margin: 0; /* Remove margens externas */
+  padding: 0; /* Remove qualquer espaçamento interno */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.map-section {
+  padding-top: 20px; /* Ajuste para separar o mapa da imagem de fundo */
+  background-color: #ffffff; /* Fundo branco para o mapa */
+}
+
+.project-info .content-box {
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.project-info h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.project-info p {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.project-info p span {
+  font-weight: 800;
+  font-size: 40px;
+  color: #101010;
+}
+
+.project-info p.highlight {
+  font-weight: 400;
+  font-size: 24px;
+  color: #58adb2;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.project-info p.highlight span {
+  font-weight: 800;
+  font-size: 36px;
+  color: #752c14;
+  margin-left: 10px;
+}
+
+.project-info .content-box p.highlighted {
+  background-color: #e6f7e6; /* Fundo verde claro */
+  color: #104427; /* Texto verde escuro */
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: left; /* Alinhamento do texto */
+  margin-bottom: 20px;
+}
+
+.message-box {
+  background-color: #f5f5f5; /* Fundo cinza claro */
+  border: 1px solid #ddd; /* Borda sutil */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px; /* Espaço entre a mensagem e os botões */
+  font-size: 16px;
+  color: #555; /* Cor do texto */
+}
+
+.message-box p {
+  margin: 0; /* Remove margens desnecessárias */
+}
+
+button.offer-btn {
+  background-color: #58adb2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button.offer-btn:hover {
+  background-color: #104447;
+}
+
+.project-info .drag-drop-area {
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em coluna */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px; /* Ajuste o tamanho conforme necessário */
+  height: 200px; /* Quadrado */
+  border: 2px dashed #104447; /* Bordas pontilhadas no tom principal */
+  border-radius: 10px; /* Cantos levemente arredondados */
+  background-color: #e1eaee; /* Fundo em tom claro */
+  color: #101010; /* Texto em tom escuro */
+  font-size: 1em;
+  font-weight: 500;
+  margin: 20px auto; /* Centralizado */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.project-info .drag-drop-area i {
+  font-size: 48px;
+  color: #101010; /* Cor do ícone */
+  margin-bottom: 10px; /* Espaço abaixo do ícone */
+}
+
+.project-info .drag-drop-area:hover {
+  background-color: #fbf7ee; /* Efeito de destaque ao passar o mouse */
+  transform: scale(1.03); /* Leve aumento no hover */
+}
+
+.project-info .drag-drop-area span {
+  color: #58adb2; /* Destaca o "clique aqui" */
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.project-info .drag-drop-area:hover span {
+  color: #104447; /* Tom mais escuro no hover */
+}
+
+.performance {
+  background-color: #436975;
+  color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.performance-content {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.performance-text {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  text-align: center;
+}
+
+.performance-text h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f0eadd;
+}
+
+.performance-text p {
+  font-size: 24px;
+  color: #f0eadd;
+}
+
+.social-buttons {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+}
+
+.social-buttons a {
+  color: #58adb2;
+  font-size: 60px;
+  transition: color 0.3s;
+}
+
+.social-buttons a:hover {
+  color: #f0eadd;
+}
+
+iframe {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 400; /* Fonte Regular */
+}
+
+footer .links a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .contact p {
+  margin: 5px 0;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  /* Ajustes para tablets */
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-center {
+    justify-content: space-around;
+  }
+
+  .navbar-icons {
+    font-size: 18px;
+    gap: 10px;
+  }
+
+  .project-info .content-box {
+    padding: 20px 30px;
+    max-width: 90%;
+  }
+
+  .performance-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .performance-text {
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Ajustes para celulares */
+  .header {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .user img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .project-info {
+    padding: 100px 10px;
+  }
+
+  .project-info .content-box {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .project-info .drag-drop-area {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .performance {
+    padding: 20px;
+  }
+
+  .performance-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .performance-text {
+    text-align: center;
+    gap: 20px;
+  }
+
+  .performance-text h2 {
+    font-size: 28px;
+  }
+
+  .performance-text p {
+    font-size: 18px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  footer .links a {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Ajustes para dispositivos muito pequenos */
+  .header {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .navbar-icons {
+    font-size: 16px;
+    gap: 5px;
+  }
+
+  .navbar ul li a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .project-info {
+    padding: 50px 10px;
+  }
+
+  .project-info .content-box {
+    padding: 15px;
+  }
+
+  .performance-text h2 {
+    font-size: 22px;
+  }
+
+  .performance-text p {
+    font-size: 16px;
+  }
+
+  button.offer-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+}

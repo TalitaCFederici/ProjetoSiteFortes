@@ -1,0 +1,322 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.5;
+  color: #333333;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* Banner */
+.banner {
+  background-image: url("./IMAGENS/FUNDO\ PREDIO.png");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 30px 0 300px;
+  position: relative;
+}
+.divider {
+  width: 750%; /* Faz a linha ocupar toda a largura do container */
+  height: 2px; /* Define a espessura visível da linha */
+  background-color: white; /* Define a cor da linha */
+  margin-top: 1%; /* Adiciona um espaçamento acima */
+  margin-bottom: 10px; /* Adiciona um espaçamento abaixo */
+}
+
+.top-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinha todos os itens à direita */
+  padding: 8px 15px;
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-end;
+  width: 150%;
+  margin-bottom: 10px; /* Espaço abaixo da logo */
+}
+
+.logo img {
+  max-width: 300px;
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: white; /* Linha branca separadora */
+  margin-top: 10px;
+}
+
+.auth-buttons {
+  display: flex;
+  justify-content: flex-end; /* Alinha os botões à direita */
+  gap: 10px;
+}
+
+.auth-buttons .btn {
+  padding: 10px 15px;
+  background-color: #38393a50;
+  color: white;
+  border-color: #e9f4e9;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.auth-buttons .btn:hover {
+  background-color: #010101;
+}
+
+.banner-text {
+  margin-top: 70px;
+}
+
+.banner-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.3;
+}
+
+/* Sobre */
+.about {
+  background-color: #436975;
+  text-align: left;
+  padding: 40px 20px;
+}
+
+.about h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 850px;
+  color: rgb(255, 255, 255);
+  text-align: left;
+}
+
+.about .btpr {
+  margin-top: 80px;
+  padding: 10px 35px;
+  background-color: #191a19;
+  color: white;
+  border-color: #fcfcfc7c;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute; /* Permite posicionar o botão dentro do container */
+  right: 35px; /* Alinha o botão 10px à esquerda do canto direito */
+  top: 100px; /* Ajusta a distância do botão em relação ao topo */
+}
+
+.about {
+  position: relative;
+  display: flex;
+  justify-content: flex-end; /* Alinha os botões à direita */
+  gap: 100px;
+}
+
+.about .btpr:hover {
+  background-color: #2528267c;
+}
+
+/* Como Trabalhamos */
+.how-we-work {
+  background-color: #3e584f;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.how-we-work h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #fcfcfccc;
+}
+
+.work-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #fcfcfc;
+}
+
+.card {
+  text-align: center;
+  max-width: 300px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #2f2f2f;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-content h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-content ul {
+  list-style: none;
+}
+
+.footer-content ul li {
+  margin: 5px 0;
+}
+
+.footer-content ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-content ul li a:hover {
+  text-decoration: underline;
+}
+
+.Butao {
+  justify-content: center;
+  align-items: center;
+}
+
+/* ===== Responsivo para Tablets (telas entre 768px e 1024px) ===== */
+@media (max-width: 1024px) {
+  .banner {
+    padding: 20px 0 200px;
+  }
+
+  .banner-text h1 {
+    font-size: 2rem;
+    max-width: 600px;
+  }
+
+  .about {
+    flex-direction: column; /* Organiza os elementos em coluna */
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .about p {
+    margin: 0 auto; /* Centraliza o texto */
+    max-width: 100%;
+  }
+
+  .about .btpr {
+    position: static; /* Remove o posicionamento absoluto */
+    margin: 20px auto 0; /* Centraliza o botão */
+  }
+
+  .work-grid {
+    flex-direction: column; /* Exibe os cartões em uma coluna */
+    align-items: center;
+  }
+
+  .footer {
+    flex-direction: column; /* Exibe os itens do rodapé em uma coluna */
+    text-align: center;
+  }
+
+  .footer-content {
+    margin-bottom: 20px; /* Espaço entre as seções do rodapé */
+  }
+}
+
+/* ===== Responsivo para Celulares (telas menores que 768px) ===== */
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    padding: 10px 0;
+  }
+
+  .logo img {
+    max-width: 200px; /* Reduz o tamanho da logo */
+    margin-bottom: 10px;
+  }
+
+  .auth-buttons {
+    flex-direction: column; /* Botões em coluna */
+    gap: 5px;
+  }
+
+  .banner {
+    padding: 20px 0 150px;
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+    max-width: 90%;
+  }
+
+  .about {
+    padding: 20px;
+  }
+
+  .about h2 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 0.9rem;
+  }
+
+  .about .btpr {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+
+  .work-grid {
+    flex-direction: column; /* Cartões em coluna */
+    gap: 15px;
+  }
+
+  .card {
+    max-width: 90%; /* Reduz o tamanho do cartão */
+  }
+
+  .footer {
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-content h3 {
+    font-size: 1rem;
+  }
+
+  .footer-content ul li {
+    margin: 3px 0;
+  }
+
+  .footer-content ul li a {
+    font-size: 0.9rem;
+  }
+}

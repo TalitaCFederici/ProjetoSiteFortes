@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestor de projetos - Fortes</title>
+    <link
+      rel="icon"
+      href="imagem/favicon/favicon-16x16.png"
+      type="imagem/x-icon"
+    />
+    <link rel="stylesheet" href="C.relatorio.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar-icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-bell"></i>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="./C.inicial.html">Página Principal</a></li>
+            <li><a href="./C.gestor.html">Gestor de Projetos</a></li>
+            <li><a href="./C.relatorio.html" class="active">Relatórios</a></li>
+            <li><a href="./C.financeiro.html">Financeiro</a></li>
+          </ul>
+        </nav>
+
+        <div class="user">
+          <span>Odvan Silva</span>
+          <img src="./IMAGENS/odvan.png" alt="Avatar do Usuário" />
+        </div>
+      </div>
+    </header>
+
+    <section class="create-report-container">
+      <h2 class="create-report-title">Criar Novo Relatório</h2>
+      <label for="recipient-select" class="recipient-label"
+        >Selecione o Destinatário:</label
+      >
+      <select id="recipient-select" class="recipient-select">
+        <option value="odvan@fortes.com">Eu</option>
+        <option value="aguavix@gmail.com">Jessica - ÁGUAVIX</option>
+        <option value="alimet@gmail.com">Maria - Alimento para todos</option>
+        <option value="agasalhos@gmail.com">Pedro - Agasalho social</option>
+      </select>
+      <textarea
+        id="new-report-content"
+        class="new-report-content"
+        placeholder="Escreva aqui o conteúdo do novo relatório..."
+      ></textarea>
+      <button id="add-report-button" class="button add-report-button">
+        Enviar relatório
+      </button>
+    </section>
+
+    <div class="background">
+      <main class="main-container">
+        <!-- Caixa de entrada -->
+        <aside class="sidebar">
+          <div class="sidebar-title">Caixa de entrada</div>
+          <ul class="sidebar-list">
+            <li data-report="relatorio1">Construindo Futuros: Não visto</li>
+            <li data-report="relatorio2">Educação para Todos: Não visto</li>
+            <li data-report="relatorio3">Saúde para Todos: Não visto</li>
+            <li data-report="relatorio4">Tecnologia Inclusiva: Não visto</li>
+          </ul>
+        </aside>
+
+        <!-- Relatório -->
+        <section class="report-container">
+          <h2 class="report-title">Relatório do Projeto</h2>
+          <div id="report-content" class="report-content">
+            <p>
+              Selecione um relatório na barra lateral para exibir os detalhes.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="links">
+          <a href="#">Explorar</a>
+          <!-- Colocar Links para outras paginas -->
+          <a href="#">Sobre nós</a>
+          <a href="#">Ajuda</a>
+        </div>
+        <div class="contact">
+          <p>Telefone: (27) 99999-4567</p>
+          <p>Email: fortes@forteseng.com</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="C.relatorio.js"></script>
+</html>

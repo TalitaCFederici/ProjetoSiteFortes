@@ -1,0 +1,320 @@
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+  background-color: #464646; /* Cor de fundo padrão */
+}
+
+header,
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.header,
+.navbar {
+  font-weight: 800;
+  position: relative;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 10px 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar ul li a:hover {
+  background-color: #c7c7c7;
+}
+
+.navbar ul li a.active {
+  background-color: #edd5f7;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.navbar-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-icons i:hover {
+  color: #688e78;
+}
+
+/* Imagem do usuário */
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Seção de notas fiscais */
+.background-container {
+  background: url("./IMAGENS/FUNDO PREDIO.png") no-repeat center center fixed;
+  background-size: cover;
+  padding: 110px;
+}
+
+.notas-fiscais {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 100px;
+  border-radius: 10px;
+}
+
+.notas-fiscais-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.search-bar {
+  width: 250px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Lista de notas fiscais */
+.lista-notas .nota {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.nota .btn-download {
+  background-color: #4c6764;
+  color: white;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nota .btn-download:hover {
+  background-color: #023946;
+}
+
+/* Seção de envios */
+.envios {
+  background: #436975;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.envios form {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.envios .btn-enviar {
+  background-color: #2f3030;
+  color: white;
+  cursor: pointer;
+}
+
+.envios .btn-enviar:hover {
+  background-color: #191b1b8f;
+}
+
+/* Rodapé */
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer .links a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  /* Tablets */
+  .navbar {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navbar ul li a {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .background-container {
+    padding: 60px 20px;
+  }
+
+  .notas-fiscais {
+    padding: 50px 20px;
+  }
+
+  .notas-fiscais-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .lista-notas .nota {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .envios {
+    padding: 30px 20px;
+  }
+
+  .envios form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Celulares */
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .navbar-icons {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .navbar ul li a {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  .background-container {
+    padding: 40px 10px;
+  }
+
+  .notas-fiscais {
+    padding: 30px 10px;
+  }
+
+  .notas-fiscais-header {
+    gap: 5px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .lista-notas .nota {
+    padding: 10px;
+  }
+
+  .envios {
+    padding: 20px 10px;
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Celulares pequenos */
+  .navbar ul li a {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .user img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .background-container {
+    padding: 20px 5px;
+  }
+
+  .notas-fiscais {
+    padding: 20px 5px;
+  }
+
+  .lista-notas .nota {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .envios {
+    padding: 15px 5px;
+  }
+
+  footer .footer-content {
+    font-size: 12px;
+  }
+}

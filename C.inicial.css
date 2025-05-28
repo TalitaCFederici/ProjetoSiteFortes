@@ -1,0 +1,415 @@
+/* Importação das fontes Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(imagem/fundo.png);
+  background-size: auto;
+  background-position: top;
+  background-size: -50%;
+  font-family: "Inter", sans-serif; /* Fonte Inter aplicada */
+  background-color: #7e7e7e;
+  color: #000000;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 20px;
+  position: relative;
+  font-weight: 800; /* Fonte Extra Bold */
+}
+
+/* Importação das fontes Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(imagem/fundo.png);
+  background-size: auto;
+  background-position: top;
+  background-size: -50%;
+  font-family: "Inter", sans-serif; /* Fonte Inter aplicada */
+  background-color: #7e7e7e;
+  color: #000000;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 20px;
+  position: relative;
+  font-weight: 800; /* Fonte Extra Bold */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os ícones */
+  font-size: 20px;
+  color: #000;
+  margin-left: 0; /* Garantir alinhamento à esquerda */
+}
+
+.navbar-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-icons i:hover {
+  color: #688e78; /* Cor ao passar o mouse */
+}
+
+.navbar-center {
+  flex-grow: 1; /* Faz essa seção ocupar o espaço central */
+  display: flex;
+  justify-content: center; /* Centraliza os links dentro dessa seção */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800; /* Fonte Extra Bold */
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #c7c7c7;
+  color: #000;
+}
+
+.navbar ul li a.active {
+  background-color: #edd5f7; /* Rosa */
+  color: #000000;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Painel Principal */
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.panel {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.panel h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 800; /* Fonte Extra Bold */
+}
+
+.panel p {
+  font-size: 20px;
+  margin-bottom: 25px;
+  font-weight: 400; /* Fonte Regular */
+}
+
+.panel .highlight {
+  color: #ffffff;
+  font-weight: 800; /* Destaque em Extra Bold */
+}
+
+.panel button {
+  background-color: #436975;
+  box-shadow: 1px 2px 2px rgb(78, 78, 78);
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-items: center;
+  text-shadow: 1px 1px 2px rgb(80, 80, 80);
+}
+
+.panel button:hover {
+  background-color: #139956;
+}
+
+.balao {
+  text-align: center;
+  background-color: #cf3b3b;
+  padding: 2px 2px;
+  border-radius: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  box-shadow: 1px 1px 2px rgb(109, 109, 109);
+}
+
+/* Notificações */
+.notifications {
+  flex: 0.6;
+  background-color: #e6e6e6;
+  padding: 50px 40px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgb(138, 138, 138);
+}
+
+.notifications h3 {
+  text-align: center;
+  font-size: 27px;
+  margin-bottom: 20px;
+  color: #000000;
+  font-weight: 800; /* Extra Bold */
+}
+
+.notifications ul {
+  list-style: none;
+  font-size: 18px;
+  color: #000000;
+  font-weight: 400; /* Fonte Regular */
+}
+
+.notifications ul li {
+  margin-bottom: 8px;
+}
+
+/* Seção de Projetos */
+.projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  background-color: #436975;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projects .text {
+  flex: 1;
+  padding-right: 2px;
+}
+
+.projects h2 {
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: 800; /* Extra Bold */
+}
+
+.projects p {
+  color: white;
+  text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra mais intensa */
+  font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 400; /* Fonte Regular */
+}
+
+.E {
+  color: rgb(131, 216, 255);
+}
+
+.S {
+  color: rgb(250, 98, 204);
+}
+
+.projects img {
+  max-width: 50%;
+  border-radius: 20px;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2); /* Sombreado em volta da imagem */
+}
+
+/* Rodapé */
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 400; /* Fonte Regular */
+}
+
+footer .links a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .contact p {
+  margin: 5px 0;
+}
+/* Responsividade */
+@media (max-width: 1024px) {
+  /* Tablets */
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px; /* Espaçamento reduzido */
+    align-items: center;
+  }
+
+  .navbar-center {
+    flex-grow: unset;
+  }
+
+  .dashboard {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .panel {
+    margin-right: 0;
+    margin-bottom: 20px; /* Espaçamento entre os painéis no modo empilhado */
+  }
+
+  .projects {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .projects img {
+    max-width: 100%; /* Imagem se ajusta à largura */
+    margin-bottom: 20px; /* Espaço entre o texto e a imagem */
+  }
+
+  .notifications {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Celulares */
+  .header,
+  .navbar,
+  .dashboard,
+  .projects,
+  footer {
+    padding: 10px; /* Reduz o padding para telas menores */
+  }
+
+  .navbar ul {
+    gap: 5px; /* Espaçamento reduzido entre links */
+  }
+
+  .navbar-icons {
+    gap: 10px; /* Ajusta o espaçamento entre ícones */
+    font-size: 18px; /* Ícones menores */
+  }
+
+  .panel button {
+    font-size: 16px;
+    padding: 10px; /* Botões menores */
+  }
+
+  .projects h2 {
+    font-size: 24px;
+  }
+
+  .projects p {
+    font-size: 16px;
+  }
+
+  .notifications ul {
+    font-size: 16px;
+  }
+
+  footer .footer-content {
+    flex-direction: column; /* Itens empilhados */
+    text-align: center;
+  }
+
+  footer .links a {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Telas muito pequenas */
+  .navbar ul {
+    font-size: 14px;
+  }
+
+  .projects img {
+    max-width: 90%; /* Ajusta ainda mais a imagem */
+  }
+
+  .panel h2 {
+    font-size: 20px;
+  }
+
+  .panel p {
+    font-size: 14px;
+  }
+
+  .notifications ul {
+    font-size: 14px;
+  }
+
+  .projects h2,
+  .projects p {
+    font-size: 18px;
+  }
+
+  .balao {
+    font-size: 12px; /* Balão com texto menor */
+    padding: 5px; /* Ajusta o tamanho do balão */
+  }
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro - Fortes Engenharia</title>
+  <link rel="stylesheet" href="P.cadastro.css">
+  <script src="P.cadastro.js"></script>
+</head>
+<body>
+    <div class="container">
+
+    <div class="left-panel"></div>
+
+    <div class="right-panel">
+
+    <div class="form-container">
+        <img src="./IMAGENS/LOGO FORTES.png" alt="100px">
+        <h1>CRIE SUA CONTA</h1>
+
+          <p class="subtext">TIPO PARCEIRO</p>
+
+            <form id="registration-form">
+  <input type="text" placeholder="Nome" required>
+  <input type="text" placeholder="CPF" required>
+  <input type="email" placeholder="Email" required>
+  <input type="password" placeholder="Senha" required>
+  <button type="submit" onclick="validarRegistro('P.inicial.html')">REGISTRAR</button>
+  <a href="p_login.html" class="help-link">Já possui uma conta? Faça login</a>
+</form>
+
+<script>
+  function validarRegistro(event) {
+    const form = document.getElementById('registration-form');
+    if (!form.checkValidity()) {
+      event.preventDefault(); // Impede o envio do formulário
+      form.reportValidity(); // Mostra os erros
+    }
+  }
+</script>
+
+    </div>
+
+    </div>
+
+    </div>
+    
+</body>
+</html>

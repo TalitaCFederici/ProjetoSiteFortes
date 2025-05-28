@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Inicial Colaborador</title>
+    <link rel="stylesheet" href="./C.inicial.css" />
+    <link
+      rel="icon"
+      href="imagem/favicon/favicon-16x16.png"
+      type="imagem/x-icon"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar-icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-bell"></i>
+        </div>
+
+        <nav>
+          <ul>
+            <li>
+              <a href="./C.inicial.html" class="active">Página Principal</a>
+            </li>
+            <!--Colocar LINKS PARA OUTRAS PAGINAS-->
+            <li><a href="./C.gestor.html">Gestor de Projetos</a></li>
+            <li><a href="./C.relatorio.html">Relatórios</a></li>
+            <li><a href="./C.financeiro.html">Financeiro</a></li>
+          </ul>
+        </nav>
+
+        <div class="user">
+          <span>Odvan Silva</span>
+          <img src="./IMAGENS/odvan.png" alt="Avatar do Usuário" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Seção do painel -->
+      <section class="dashboard">
+        <div class="panel">
+          <h2>Olá, Usuário!</h2>
+          <br />
+          <div class="balao">
+            <br />
+            <p>
+              Você tem <span class="highlight">2 projetos</span> com a vigência
+              próxima.
+            </p>
+            <p>Consulte seu gestor de projetos.</p>
+          </div>
+          <br />
+          <button onclick="window.location.href='gestor.html'">
+            Analises pendentes
+          </button>
+        </div>
+
+        <div class="notifications">
+          <h3>Notificações</h3>
+          <br />
+          <ul>
+            <li>Reunião de status - 29/11/2024</li>
+            <li>Solicitação de materiais - 28/11/2024</li>
+            <li>Proposta aprovada - 27/11/2024</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Seção dos projetos -->
+      <section class="projects">
+        <div class="text">
+          <h2>
+            PROJETOS FORT<span class="E">E</span><span class="S">S</span> 2K25
+          </h2>
+          <br />
+          <p>
+            Em 2025, os Projetos Fortes buscam promover inovação tecnológica,
+            sustentabilidade e excelência em engenharia, com o objetivo de criar
+            soluções que atendam aos desafios globais. A ênfase será no
+            desenvolvimento de novas tecnologias que melhorem a qualidade de
+            vida e a eficiência dos processos.
+          </p>
+
+          <p>
+            Além disso, a sustentabilidade será um princípio fundamental,
+            garantindo que as soluções sejam ambientalmente responsáveis. A
+            excelência em engenharia será a base para a execução desses
+            projetos, assegurando a implementação de soluções seguras, eficazes
+            e de alta qualidade.
+          </p>
+        </div>
+        <img src="/IMAGENS/sede.png" alt="Imagem do prédio da empresa" />
+      </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="footer-content">
+        <div class="links">
+          <a href="#">Explorar</a>
+          <!-- Colocar Links para outras paginas -->
+          <a href="#">Sobre nós</a>
+          <a href="#">Ajuda</a>
+        </div>
+        <div class="contact">
+          <p>Telefone: (27) 99999-4567</p>
+          <p>Email: fortes@forteseng.com</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./C.inicial.js"></script>
+</html>

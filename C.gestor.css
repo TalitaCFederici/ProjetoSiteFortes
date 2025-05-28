@@ -1,0 +1,360 @@
+/* Importação das fontes Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  background-image: url(imagem/fundo.png);
+  background-size: cover;
+  background-position: top;
+  font-family: "Inter", sans-serif;
+  background-color: #7e7e7e;
+  color: #000000;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 20px;
+  position: relative;
+  font-weight: 800;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  color: #000;
+  margin-left: 0;
+}
+
+.navbar-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-icons i:hover {
+  color: #688e78;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #c7c7c7;
+  color: #000;
+}
+
+.navbar ul li a.active {
+  background-color: #edd5f7;
+  color: #000000;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Container Principal */
+.container {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  box-shadow: 1px 1px 2px rgb(65, 65, 65);
+  text-align: center;
+}
+
+.container h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.project {
+  background-color: #436975;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px 2px rgb(65, 65, 65);
+}
+
+.project div {
+  display: flex;
+  flex-direction: column;
+}
+
+.project .project-name {
+  font-size: 16px;
+  font-weight: 800;
+  text-shadow: 1px 1px 2px rgb(78, 78, 78);
+}
+
+.project .responsible {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-top: 5px;
+  text-shadow: 1px 1px 2px rgb(78, 78, 78);
+}
+
+.project .status {
+  color: #ffffff;
+  font-weight: 800;
+  margin-left: auto;
+}
+
+#ativo,
+#pendente,
+#inativo {
+  padding: 8px 8px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 2px rgb(71, 71, 71);
+  text-shadow: 1px 1px 2px rgb(78, 78, 78);
+}
+
+#ativo {
+  background-color: rgb(0, 148, 0);
+}
+
+#pendente {
+  background-color: rgb(189, 186, 20);
+}
+
+#inativo {
+  background-color: red;
+}
+
+/* Visualização */
+.visualization {
+  background: #eef3f7;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 850px;
+  box-shadow: 1px 1px 2px rgb(49, 49, 49);
+}
+
+.visualization h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.visualization .details {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.user-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-info img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.company-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #436975;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(41, 41, 41);
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 400; /* Fonte Regular */
+}
+
+footer .links a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .contact p {
+  margin: 5px 0;
+}
+
+/* Responsividade para tablets e celulares */
+@media (max-width: 1024px) {
+  /* Tablets */
+  .navbar ul {
+    justify-content: center; /* Centraliza os links */
+    flex-wrap: wrap; /* Permite que os itens quebrem de linha */
+  }
+
+  .user {
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    gap: 5px; /* Reduz espaço entre itens */
+  }
+
+  .container {
+    max-width: 100%; /* Ajusta largura para ocupar toda a tela */
+    padding: 15px; /* Reduz espaçamento interno */
+  }
+
+  .project {
+    flex-direction: column; /* Coloca itens em coluna */
+    gap: 10px; /* Espaçamento entre elementos */
+    text-align: center; /* Centraliza texto */
+  }
+
+  .project .status {
+    margin-left: 0; /* Remove espaçamento lateral */
+    margin-top: 10px; /* Adiciona espaçamento superior */
+  }
+
+  .visualization .details {
+    flex-direction: column; /* Alinha detalhes verticalmente */
+  }
+
+  .company-info {
+    padding: 10px; /* Reduz padding */
+    text-align: center; /* Centraliza texto */
+  }
+}
+
+@media (max-width: 768px) {
+  /* Celulares */
+  .navbar ul {
+    flex-direction: column; /* Links empilhados verticalmente */
+    align-items: center; /* Centraliza os links */
+    gap: 15px; /* Aumenta espaço entre links */
+  }
+
+  .navbar-icons {
+    justify-content: center; /* Centraliza os ícones */
+  }
+
+  .user-info img {
+    width: 60px; /* Reduz tamanho do avatar */
+    height: 60px;
+  }
+
+  .visualization {
+    padding: 15px; /* Reduz padding geral */
+  }
+
+  .project {
+    padding: 10px; /* Reduz espaçamento interno */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Empilha itens do footer */
+    text-align: center; /* Centraliza texto */
+  }
+
+  .footer .links a {
+    margin-right: 0; /* Remove margem lateral */
+    margin-bottom: 10px; /* Adiciona margem inferior */
+  }
+
+  .company-info {
+    font-size: 14px; /* Reduz tamanho do texto */
+    padding: 10px; /* Ajusta padding */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Celulares pequenos */
+  .navbar {
+    flex-direction: column; /* Empilha itens */
+    gap: 15px; /* Adiciona espaçamento */
+  }
+
+  .navbar ul li a {
+    font-size: 14px; /* Reduz tamanho do texto */
+    padding: 8px 10px; /* Ajusta padding */
+  }
+
+  .project-name {
+    font-size: 14px; /* Texto menor */
+  }
+
+  .container h1 {
+    font-size: 22px; /* Reduz tamanho do título */
+  }
+
+  .company-info {
+    padding: 8px; /* Ajusta padding */
+  }
+
+  .footer {
+    font-size: 12px; /* Texto menor */
+  }
+}

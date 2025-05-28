@@ -1,0 +1,465 @@
+/* Fonte Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #454b46;
+  color: #333;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 20px;
+  position: relative;
+  font-weight: 800; /* Fonte Extra Bold */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os ícones */
+  font-size: 20px;
+  color: #000;
+  margin-left: 0; /* Garantir alinhamento à esquerda */
+}
+
+.navbar-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-icons i:hover {
+  color: #688e78; /* Cor ao passar o mouse */
+}
+
+.navbar-center {
+  flex-grow: 1; /* Faz essa seção ocupar o espaço central */
+  display: flex;
+  justify-content: center; /* Centraliza os links dentro dessa seção */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800; /* Fonte Extra Bold */
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #c7c7c7;
+  color: #000;
+}
+
+.navbar ul li a.active {
+  background-color: #edd5f7; /* Rosa */
+  color: #000000;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+/* Estilo para a seção principal */
+.project-info {
+  background-image: url("imagens/fundo.png");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+  max-width: 100%;
+}
+
+.project-info .content-box {
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1200px;
+  text-align: left;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.project-info h1 {
+  font-weight: 800;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.project-info p {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.project-info p span {
+  font-weight: 800;
+  font-size: 40px;
+  color: #101010;
+}
+
+.project-info p.highlight {
+  font-weight: 400;
+  font-size: 20px;
+  color: #58adb2;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.project-info .content-box p.highlighted {
+  background-color: #e6f7e6; /* Fundo verde claro */
+  color: #104427; /* Texto verde escuro */
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: left; /* Alinhamento do texto */
+  margin-bottom: 10px;
+}
+
+.message-box {
+  background-color: #f5f5f5; /* Fundo cinza claro */
+  border: 1px solid #ddd; /* Borda sutil */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px; /* Espaço entre a mensagem e os botões */
+  font-size: 16px;
+  color: #555; /* Cor do texto */
+}
+
+.message-box p {
+  margin: 0; /* Remove margens desnecessárias */
+}
+
+button.offer-btn {
+  background-color: #58adb2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button.offer-btn:hover {
+  background-color: #104447;
+}
+
+.project-info .dropdown {
+  margin-top: 20px;
+}
+
+.project-info .dropdown label {
+  display: block;
+  font-weight: bold;
+  font-size: 16px;
+  color: #555;
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+
+.project-info .dropdown select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.project-info .drag-drop-area {
+  display: flex;
+  flex-direction: column; /* Coloca os elementos em coluna */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 500px; /* Ajuste o tamanho conforme necessário */
+  height: 200px; /* Quadrado */
+  width: 100%;
+  border: 2px dashed #104447; /* Bordas pontilhadas no tom principal */
+  border-radius: 10px; /* Cantos levemente arredondados */
+  background-color: #e1eaee; /* Fundo em tom claro */
+  color: #101010; /* Texto em tom escuro */
+  font-size: 1em;
+  font-weight: 500;
+  margin: 20px auto; /* Centralizado */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.project-info .drag-drop-area i {
+  font-size: 48px;
+  color: #101010; /* Cor do ícone */
+  margin-bottom: 10px; /* Espaço abaixo do ícone */
+}
+
+.project-info .drag-drop-area:hover {
+  background-color: #fbf7ee; /* Efeito de destaque ao passar o mouse */
+  transform: scale(1.03); /* Leve aumento no hover */
+}
+
+.blue-background {
+  background-color: #436975; /* Cor do fundo */
+  color: #fff; /* Texto branco */
+  padding: 40px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  margin-top: 20px;
+}
+
+.blue-background h2 {
+  font-weight: 600;
+  font-size: 48px; /* Tamanho menor para h2 */
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o título */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra no texto */
+}
+
+.performance {
+  background-color: #fff; /* Fundo branco */
+  color: #101010;
+  padding: 40px 60px; /* Espaçamento interno */
+  border-radius: 12px; /* Bordas arredondadas */
+  width: 100%;
+  max-width: 1200px;
+  text-align: left;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 0 auto; /* Centraliza na página */
+  display: flex; /* Flex container */
+  flex-direction: column; /* Elementos em coluna por padrão */
+  gap: 20px; /* Espaçamento entre os blocos */
+}
+
+.performance .dropdowns {
+  display: flex;
+  justify-content: left; /* Centraliza os dropdowns horizontalmente */
+  gap: 20px;
+}
+
+.performance .content-wrapper {
+  display: flex; /* Layout horizontal */
+  flex-wrap: wrap; /* Permite quebra para telas menores */
+  justify-content: space-between; /* Espaço entre os itens */
+  align-items: flex-start; /* Alinha os itens ao topo */
+  gap: 20px; /* Espaçamento entre o gráfico e o texto */
+}
+
+.dropdowns select {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Borda leve */
+  border-radius: 6px;
+  background-color: #fff; /* Fundo branco */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  color: #101010; /* Texto escuro */
+  cursor: pointer;
+}
+
+.text-info {
+  background-color: #e1eaee; /* Fundo cinza claro */
+  color: #101010; /* Texto escuro */
+  font-weight: 600;
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+  flex: 1; /* Ocupa espaço proporcional */
+  max-width: 48%; /* Limita a largura do texto */
+}
+
+.text-info ul {
+  list-style: disc; /* Marcador de lista */
+  margin-left: 20px; /* Indentação */
+  margin-top: 40px; /* Espaço do texto */
+  margin-bottom: 40px;
+}
+
+.text-info p {
+  margin-top: 40px; /* Espaço do texto */
+  margin-bottom: 40px;
+  font-size: 16px; /* Texto menor */
+}
+
+.chart-container {
+  flex: 1; /* Espaço proporcional */
+  text-align: center; /* Centraliza horizontalmente */
+  max-width: 50%; /* Limita a largura do gráfico */
+}
+
+.chart-container img {
+  width: 100%; /* Ocupa toda a largura do container */
+  height: auto; /* Mantém proporções */
+  border: 2px solid #ccc; /* Borda */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 400; /* Fonte Regular */
+}
+
+footer .links a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .contact p {
+  margin: 5px 0;
+}
+
+/* Responsivo para tablets (telas de 768px ou menores) */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap; /* Permite quebra de linha */
+  }
+
+  .navbar ul {
+    flex-direction: column; /* Links em coluna */
+    gap: 10px; /* Reduz o espaçamento */
+  }
+
+  .navbar ul li a {
+    padding: 10px; /* Reduz o padding */
+    font-size: 14px; /* Diminui o tamanho do texto */
+  }
+
+  .project-info .content-box {
+    padding: 20px 30px; /* Ajusta o espaçamento interno */
+  }
+
+  .project-info h1 {
+    font-size: 28px; /* Reduz o tamanho do título */
+  }
+
+  .project-info p {
+    font-size: 16px; /* Texto menor */
+  }
+
+  .performance .content-wrapper {
+    flex-direction: column; /* Coloca em coluna */
+    gap: 10px; /* Reduz o espaçamento */
+  }
+
+  .chart-container,
+  .text-info {
+    max-width: 100%; /* Ocupa toda a largura */
+  }
+
+  .chart-container img {
+    width: 100%; /* Ajusta o tamanho da imagem */
+  }
+}
+
+/* Responsivo para celulares (telas de 480px ou menores) */
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 10px; /* Reduz o padding */
+  }
+
+  .navbar-icons {
+    gap: 10px; /* Reduz o espaçamento dos ícones */
+  }
+
+  .navbar ul li a {
+    font-size: 12px; /* Texto ainda menor */
+    padding: 8px; /* Reduz o padding */
+  }
+
+  .project-info {
+    padding: 100px 0; /* Reduz o padding vertical */
+  }
+
+  .project-info .content-box {
+    padding: 20px; /* Reduz o espaçamento interno */
+  }
+
+  .project-info h1 {
+    font-size: 24px; /* Reduz o tamanho do título */
+  }
+
+  .project-info p {
+    font-size: 14px; /* Texto menor */
+  }
+
+  .performance {
+    padding: 20px; /* Reduz o espaçamento interno */
+  }
+
+  .performance .dropdowns {
+    flex-direction: column; /* Dropdowns em coluna */
+    gap: 10px; /* Reduz o espaçamento */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Itens do rodapé em coluna */
+    gap: 5px; /* Reduz o espaçamento */
+  }
+
+  footer .links a {
+    font-size: 12px; /* Texto menor */
+    margin-right: 10px; /* Menor espaçamento */
+  }
+}

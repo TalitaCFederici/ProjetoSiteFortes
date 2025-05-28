@@ -1,0 +1,383 @@
+/* Fonte Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+/* Estilos globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: white;
+  background-color: #464646; /* Cor de fundo padrão */
+}
+
+header,
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+.header,
+.navbar {
+  font-weight: 800;
+  position: relative;
+}
+
+/* Cabeçalho */
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 20px;
+  position: relative;
+  font-weight: 800; /* Fonte Extra Bold */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os ícones */
+  font-size: 20px;
+  color: #000;
+  margin-left: 0; /* Garantir alinhamento à esquerda */
+}
+
+.navbar-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-icons i:hover {
+  color: #688e78; /* Cor ao passar o mouse */
+}
+
+.navbar-center {
+  flex-grow: 1; /* Faz essa seção ocupar o espaço central */
+  display: flex;
+  justify-content: center; /* Centraliza os links dentro dessa seção */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800; /* Fonte Extra Bold */
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #c7c7c7;
+  color: #000;
+}
+
+.navbar ul li a.active {
+  background-color: #edd5f7; /* Rosa */
+  color: #000000;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+/* Estilo para a seção principal */
+.project-info {
+  background: url("./IMAGENS/FUNDO\ PREDIO.png");
+  background-size: cover;
+  padding: 110px;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 0;
+}
+
+.project-info .content-box {
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 12px;
+  max-width: 600px;
+  text-align: left;
+  box-shadow: 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.project-info h1 {
+  font-weight: 800;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.project-info p {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.project-info p span {
+  font-weight: 800;
+  font-size: 40px;
+  color: #101010;
+}
+
+.project-info p.highlight {
+  font-weight: 400;
+  font-size: 20px;
+  color: #58adb2;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.project-info p.highlight span {
+  font-weight: 800;
+  font-size: 36px;
+  color: #752c14;
+  margin-left: 10px;
+}
+
+.project-info .content-box p.highlighted {
+  background-color: #e6f7e6; /* Fundo verde claro */
+  color: #104427; /* Texto verde escuro */
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: left; /* Alinhamento do texto */
+  margin-bottom: 20px;
+}
+
+.message-box {
+  background-color: #f5f5f5; /* Fundo cinza claro */
+  border: 1px solid #ddd; /* Borda sutil */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px; /* Espaço entre a mensagem e os botões */
+  font-size: 16px;
+  color: #555; /* Cor do texto */
+}
+
+.message-box p {
+  margin: 0; /* Remove margens desnecessárias */
+}
+
+button.offer-btn {
+  background-color: #58adb2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+button.offer-btn:hover {
+  background-color: #104447;
+}
+
+.project-info .dropdown {
+  margin-top: 20px;
+}
+
+.project-info .dropdown label {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.project-info .dropdown select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.performance {
+  background-color: #436975;
+  color: #fff;
+  padding: 50px;
+  border-radius: 8px;
+  margin-top: 0px;
+  display: flex; /* Usar flexbox para alinhamento */
+  flex-direction: column; /* Para organizar o título acima dos gráficos */
+  gap: 20px; /* Espaçamento entre o título e os gráficos */
+}
+
+.performance h2 {
+  font-weight: 800;
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o título */
+}
+
+.chart-container {
+  display: flex; /* Cria um layout em linha para os gráficos */
+  justify-content: space-between; /* Espaça os gráficos */
+  align-items: center; /* Centraliza verticalmente */
+  gap: 20px; /* Espaço entre os gráficos */
+}
+
+.bar-chart img,
+.pie-chart img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse os limites do contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 4px; /* Adiciona bordas arredondadas */
+  flex: 1; /* Permite que os gráficos se ajustem proporcionalmente */
+}
+
+.bar-chart {
+  flex: 1; /* O gráfico de barras ocupa metade do espaço */
+}
+
+.pie-chart {
+  flex: 1; /* O gráfico de pizza ocupa metade do espaço */
+}
+
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 400; /* Fonte Regular */
+}
+
+footer .links a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .contact p {
+  margin: 5px 0;
+}
+
+/* Responsividade para Tablets */
+@media (max-width: 1024px) {
+  .navbar ul {
+    gap: 10px; /* Reduz o espaçamento entre os links */
+    flex-wrap: wrap; /* Permite quebrar os links em várias linhas */
+  }
+
+  .user img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .project-info {
+    padding: 150px 20px; /* Reduz o padding */
+  }
+
+  .project-info .content-box {
+    padding: 30px 20px; /* Reduz o tamanho interno */
+    max-width: 90%; /* Reduz a largura máxima */
+  }
+
+  .performance {
+    padding: 30px 20px; /* Reduz o padding */
+  }
+
+  .chart-container {
+    flex-direction: column; /* Empilha os gráficos verticalmente */
+    gap: 10px; /* Reduz o espaçamento entre os gráficos */
+  }
+}
+
+/* Responsividade para Smartphones */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column; /* Empilha os elementos */
+    gap: 10px; /* Adiciona espaço entre os itens */
+  }
+
+  .navbar-center {
+    justify-content: flex-start; /* Centraliza os links no início */
+  }
+
+  .project-info {
+    padding: 100px 20px;
+  }
+
+  .project-info .content-box {
+    padding: 20px;
+  }
+
+  .project-info h1 {
+    font-size: 20px; /* Reduz o tamanho do título */
+  }
+
+  .project-info p {
+    font-size: 14px; /* Reduz o tamanho do texto */
+  }
+
+  .performance h2 {
+    font-size: 24px; /* Reduz o tamanho do título */
+  }
+
+  .chart-container {
+    flex-direction: column; /* Organiza os gráficos em coluna */
+    gap: 10px;
+  }
+
+  footer .footer-content {
+    flex-direction: column; /* Empilha o conteúdo no rodapé */
+    gap: 10px;
+    text-align: center; /* Centraliza o texto */
+  }
+}

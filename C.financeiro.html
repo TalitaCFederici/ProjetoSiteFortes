@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Revalidação Financeira</title>
+    <link rel="stylesheet" href="C.financeiro.css" />
+    <link
+      rel="icon"
+      href="imagens/favicon/favicon-16x16.png"
+      type="imagens/x-icon"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar-icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-bell"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="C.inicial.html">Página Principal</a></li>
+            <!--Colocar LINKS PARA OUTRAS PAGINAS-->
+            <li><a href="C.gestor.html">Gestor de Projetos</a></li>
+            <li><a href="C.relatorio.html">Relatórios</a></li>
+            <li><a href="C.financeiro.html" class="active">Financeiro</a></li>
+          </ul>
+        </nav>
+        <div class="user">
+          <span>Odvan Silva</span>
+          <img src="imagens/odvan.png" alt="Avatar do Usuário" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="project-info">
+        <div class="content-box">
+          <h1>REVALIDAÇÃO FINANCEIRA</h1>
+          <p class="highlighted">
+            Valor deve estar presente no documento oficial.<br />
+          </p>
+          <p>
+            <span><sup>$</sup>150</span>
+          </p>
+
+          <div class="message-box">
+            <p>"Texto"</p>
+          </div>
+
+          <div class="dropdown">
+            <label for="project-time">TEMPO DE VIGÊNCIA</label>
+            <select id="project-select">
+              <option value="1">1 Ano</option>
+            </select>
+            <label for="project-select">SELECIONE O PROJETO</label>
+            <select id="project-select">
+              <option value="1">Projeto A</option>
+            </select>
+          </div>
+
+          <div class="drag-drop-area">
+            <i class="fas fa-upload"></i>
+            <p>Faça o upload do documento oficial em PDF.</p>
+          </div>
+
+          <button class="offer-btn">Enviar!</button>
+        </div>
+      </section>
+
+      <section class="blue-background">
+        <h2>ANÁLISE DE CRESCIMENTO</h2>
+
+        <section class="performance">
+          <div class="dropdowns">
+            <select id="project-select">
+              <option value="agua-vix">ÁGUAVIX</option>
+            </select>
+            <select id="time-select">
+              <option value="anual">ANUAL</option>
+            </select>
+          </div>
+
+          <div class="content-wrapper">
+            <div class="text-info">
+              <ul>
+                <li>Janeiro: Crescimento de 20%.</li>
+                <li>Fevereiro: Crescimento de 35%.</li>
+                <li>Março: Crescimento de 30%.</li>
+                <li>Abril: Crescimento de 35%.</li>
+                <li>Maio: Crescimento de 27%.</li>
+              </ul>
+              <p>
+                O projeto mostrou crescimento constante, com destaque para
+                fevereiro e abril, ambos com 35%. A variação mensal refletiu boa
+                performance e estabilidade.
+              </p>
+            </div>
+
+            <div class="chart-container">
+              <img src="imagens/grafico_barras.png" alt="Gráfico de Barras" />
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <div class="links">
+            <a href="#">Explorar</a>
+            <!-- Colocar Links para outras paginas -->
+            <a href="#">Sobre nós</a>
+            <a href="#">Ajuda</a>
+          </div>
+          <div class="contact">
+            <p>Telefone: (27) 99999-4567</p>
+            <p>Email: fortes@forteseng.com</p>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="./C.financeiro.js"></script>
+  </body>
+</html>

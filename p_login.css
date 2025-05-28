@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif; /* Define a fonte Inter como padrão */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0f4a5a;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px; /* Adiciona bordas arredondadas */
+  overflow: hidden; /* Garante que conteúdo extra não ultrapasse o container */
+}
+
+.left-panel {
+  flex: 1;
+  background: url("IMAGENS/image1.jpg") center center no-repeat; /* Imagem de fundo no lado esquerdo */
+  background-size: cover; /* A imagem cobre toda a área do painel esquerdo */
+}
+
+.right-panel {
+  flex: 1;
+  background-color: #f4f4f4; /* Cor de fundo clara */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.subtext {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0f4a5a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #09738c;
+}
+
+.help-link {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #0f4a5a;
+  text-decoration: none;
+}
+
+.help-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  /* Tablets */
+  .container {
+    height: 500px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .subtext {
+    font-size: 0.85rem;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Smartphones (paisagem) */
+  .container {
+    flex-direction: column; /* Empilha os painéis */
+    height: auto;
+  }
+
+  .left-panel {
+    height: 200px; /* Define altura fixa para o painel esquerdo */
+    flex: none;
+  }
+
+  .right-panel {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Smartphones (retrato) */
+  .container {
+    width: 95%; /* Reduz a largura para caber melhor */
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+
+  .subtext {
+    font-size: 0.8rem;
+  }
+
+  .form-container {
+    width: 100%; /* O formulário ocupa toda a largura disponível */
+  }
+
+  input,
+  button {
+    font-size: 0.8rem;
+    padding: 8px;
+  }
+
+  .help-link {
+    font-size: 0.8rem;
+  }
+}

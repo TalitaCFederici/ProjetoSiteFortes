@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Site</title>
+    <link rel="stylesheet" href="./P.notas.css">
+</head>
+<body>
+    <header class="header">
+
+        <div class="navbar">
+    
+        <div class="navbar-icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <i class="fas fa-bell"></i>
+        </div>
+    
+            <nav>
+                <ul>
+                    <li><a href="./P.inicial.html">Página Principal</a></li> <!--Colocar LINKS PARA OUTRAS PAGINAS-->
+                    <li><a href="./p_meusprojetos.html">Meus Projetos</a></li>
+                    <li><a href="./P.notas.html" class="active">Envios/Notas</a></li>
+                    <li><a href="./P.relatorio.html">Relatórios</a></li>
+                    <li><a href="./P.financeiro.html">Financeiro</a></li>
+                </ul>
+            </nav>
+    
+            <div class="user">
+                <span>Odvan Silva</span>
+                <img src="./IMAGENS/odvan.png" alt="Avatar do Usuário">
+            </div>
+    
+        </div>
+    </header>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+
+    <div class="background-container">
+        <section class="notas-fiscais">
+            <div class="notas-fiscais-header">
+                <h2>Notas Fiscais</h2>
+                <input type="text" id="search-bar" placeholder="Pesquise pelo nome do projeto..." class="search-bar">
+            </div>
+
+            <div class="lista-notas" id="lista-notas">
+                <!-- Notas Fiscais -->
+                <div class="nota">
+                    <span class="nome-projeto">Projeto Alpha</span>
+                    <span class="date">DATE: 01/01/2024</span>
+                    <button class="btn-download">Download</button>
+                </div>
+                <div class="nota">
+                    <span class="nome-projeto">Projeto Beta</span>
+                    <span class="date">DATE: 05/02/2024</span>
+                    <button class="btn-download">Download</button>
+                </div>
+                <div class="nota">
+                    <span class="nome-projeto">Projeto Gamma</span>
+                    <span class="date">DATE: 10/03/2024</span>
+                    <button class="btn-download">Download</button>
+                </div>
+                <div class="nota">
+                    <span class="nome-projeto">Projeto Picture</span>
+                    <span class="date">DATE: 05/03/2024</span>
+                    <button class="btn-download">Download</button>
+                </div>
+                <div class="nota">
+                    <span class="nome-projeto">Projeto Alura</span>
+                    <span class="date">DATE: 04/03/2024</span>
+                    <button class="btn-download">Download</button>
+                </div>
+                <div class="nota">
+                    <span class="nome-projeto">Projeto Fismax</span>
+                    <span class="date">DATE: 15/03/2024</span>
+                    <button class="btn-download">Download</button>
+                </div>
+                <div class="nota">
+                    <span class="nome-projeto">Projeto Pmark</span>
+                    <span class="date">DATE: 19/03/2024</span>
+                    <button class="btn-download">Download</button>
+                </div>
+                <div class="nota">
+                    <span class="nome-projeto">Projeto Bino</span>
+                    <span class="date">DATE: 05/03/2024</span>
+                    <button class="btn-download">Download</button>
+                </div>
+            </div> 
+        </section>
+    </div>
+    
+        <!-- Envio de Notas -->
+        <section class="envios">
+            <h3>Envios de Notas</h3>
+            <form>
+                <input type="text" placeholder="Nome do projeto" class="desc-nome" requered>
+                <input type="text" placeholder="Descrição" class="input-desc" requered>
+                <input type="file" class="file-input" required>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="links">
+                <a href="#">Explorar</a> <!-- Colocar Links para outras paginas -->
+                <a href="#">Sobre nós</a>
+                <a href="#">Ajuda</a>
+            </div>
+            <div class="contact">
+                <p>Telefone: (27) 99999-4567</p>
+                <p>Email: fortes@forteseng.com</p>
+            </div>
+        </div>
+
+        <script src="./P.notas.js"></script>
+    </footer>
+    </body>
+    </html>

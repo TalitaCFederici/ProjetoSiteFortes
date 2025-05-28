@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meus projetos - Fortes Engenharia</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="p_meusprojetos.css" />
+    <script src="p_meusprojetos.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navbar">
+        <div class="navbar-icons">
+          <i class="fas fa-map-marker-alt"></i>
+          <i class="fas fa-bell"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./P.inicial.html">Página Principal</a></li>
+            <!--Colocar LINKS PARA OUTRAS PAGINAS-->
+            <li>
+              <a href="./p_meusprojetos.html" class="active">Meus Projetos</a>
+            </li>
+            <li><a href="./P.notas.html">Envios/Notas</a></li>
+            <li><a href="./P.relatorio.html">Relatórios</a></li>
+            <li><a href="./P.financeiro.html">Financeiro</a></li>
+          </ul>
+        </nav>
+        <div class="user">
+          <span>Odvan Silva</span>
+          <img src="imagens/odvan.png" alt="Avatar do Usuário" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Botão de upload -->
+      <div class="upload">
+        <i class="fas fa-upload"> Novo+ </i>
+        <input type="file" class="file-input" />
+      </div>
+
+      <!-- Seção de projetos -->
+      <section class="project-section" style="margin-top: -0px">
+        <div class="project-card">
+          <h3>Nome do Projeto!</h3>
+          <p>Descrição do projeto e o local de atuação!</p>
+          <div class="status status-approved">Status: Aprovado</div>
+        </div>
+
+        <div class="project-card">
+          <h3>Nome do Projeto!</h3>
+          <p>Descrição do projeto e o local de atuação!</p>
+          <div class="status status-approved">Status: Aprovado</div>
+        </div>
+
+        <div class="project-card">
+          <h3>Nome do Projeto!</h3>
+          <p>Descrição do projeto e o local de atuação!</p>
+          <div class="status status-pending">Status: Em análise</div>
+        </div>
+
+        <div class="project-card">
+          <h3>Nome do Projeto!</h3>
+          <p>Descrição do projeto e o local de atuação!</p>
+          <div class="status status-rejected">Status: Não Aprovado</div>
+        </div>
+      </section>
+
+      <!-- Regras -->
+      <section class="rules-section">
+        <h2>Regras para a aprovação de projetos pela Fortes</h2>
+        <div class="rules-container">
+          <div class="rules-left">
+            <ul class="rules-list">
+              <li>1.1. Identificação do Projeto</li>
+              <li>1.2. Resumo do Projeto</li>
+              <li>1.3. Justificativa</li>
+              <li>1.4. Objetivos</li>
+              <li>1.5. Detalhes Operacionais</li>
+              <li>1.6. Orçamento</li>
+              <li>1.7. Alinhamento com os valores da Fortes Engenharia</li>
+            </ul>
+          </div>
+          <div class="rules-right">
+            <ul class="rules-list">
+              <li>1.8. Impacto social, econômico ou ambiental esperado</li>
+              <li>1.9. Viabilidade técnica e financeira</li>
+              <li>2. Capacidade de execução dentro dos prazos propostos</li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="btn-more-info"
+          >Clique AQUI para saber mais sobre as regras!</a
+        >
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="links">
+          <a href="#">Explorar</a>
+          <!-- Colocar Links para outras páginas -->
+          <a href="#">Sobre nós</a>
+          <a href="#">Ajuda</a>
+        </div>
+        <div class="contact">
+          <p>Telefone: (27) 99999-4567</p>
+          <p>Email: fortes@forteseng.com</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Espera até que o DOM esteja completamente carregado
+      document.addEventListener("DOMContentLoaded", function () {
+        // Ação do clique no botão de upload
+        const uploadButton = document.querySelector(".upload");
+        const fileInput = document.querySelector(".file-input");
+
+        // Aciona o clique no input de arquivo quando o botão é clicado
+        uploadButton.addEventListener("click", function () {
+          fileInput.click();
+        });
+
+        // Lida com a seleção de arquivos
+        fileInput.addEventListener("change", function () {
+          const file = fileInput.files[0];
+          if (file) {
+            alert(`Arquivo selecionado: ${file.name}`);
+          } else {
+            alert("Nenhum arquivo selecionado.");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

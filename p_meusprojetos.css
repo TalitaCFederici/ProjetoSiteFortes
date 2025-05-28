@@ -1,0 +1,429 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./IMAGENS/FUNDO\ PREDIO.png);
+  background-size: cover;
+  background-position: top;
+  font-family: "Inter", sans-serif;
+  background-color: #7e7e7e;
+  color: #000000;
+}
+
+.header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 20px 20px;
+  position: relative;
+  font-weight: 800; /* Fonte Extra Bold */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 15px; /* Espaçamento entre os ícones */
+  font-size: 20px;
+  color: #000;
+  margin-left: 0; /* Garantir alinhamento à esquerda */
+}
+
+.navbar-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.navbar-icons i:hover {
+  color: #688e78; /* Cor ao passar o mouse */
+}
+
+.navbar-center {
+  flex-grow: 1; /* Faz essa seção ocupar o espaço central */
+  display: flex;
+  justify-content: center; /* Centraliza os links dentro dessa seção */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px; /* Espaçamento entre os links */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 800; /* Fonte Extra Bold */
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 5px;
+}
+
+.navbar ul li a:hover {
+  background-color: #c7c7c7;
+  color: #000;
+}
+
+.navbar ul li a.active {
+  background-color: #edd5f7; /* Rosa */
+  color: #000000;
+}
+
+.user {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+main {
+  padding: 40px 20px;
+}
+
+/* Estilo principal */
+main {
+  padding: 20px;
+  background-color: transparent;
+  border-radius: 8px;
+  margin: 20px;
+}
+
+.logo {
+  max-width: 400px;
+  height: auto;
+}
+
+/* Cartões de projetos */
+.project-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  background-color: transparent;
+  position: relative;
+}
+
+.background-card {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.project-card {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  max-width: 100%;
+  margin-left: auto;
+  color: black;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  position: relative;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 10px;
+}
+
+.status {
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.status-approved {
+  background-color: #27ae60;
+  color: white;
+}
+
+.status-pending {
+  background-color: #f39c12;
+  color: white;
+}
+
+.status-rejected {
+  background-color: #e74c3c;
+  color: white;
+}
+
+/* Regras */
+.rules-section {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(67, 105, 117, 0.8);
+  border-radius: 8px;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rules-section h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.rules-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rules-left {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.rules-right {
+  flex: 1;
+}
+
+.upload {
+  display: inline-block;
+  padding: 10px 40px;
+  background-color: #d9d9d9dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.upload:hover {
+  background-color: #3a3a3adc;
+}
+
+.upload i {
+  margin-right: 5px;
+}
+
+.file-input {
+  display: none;
+}
+
+/* Adiciona comportamento ao clicar no botão */
+.upload:active {
+  transform: scale(0.95); /* Pequeno efeito de clique */
+}
+
+.rules-list {
+  list-style: none;
+  padding-left: 15px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.rules-list li {
+  margin-bottom: 8px;
+}
+
+.btn-more-info {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #436975;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-more-info:hover {
+  background-color: #eeeeee;
+  color: #436975;
+}
+
+/* Rodapé */
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000000;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+footer .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-weight: 400;
+}
+
+footer .links a {
+  color: #000000;
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+footer .contact p {
+  margin: 5px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsividade para Tablets */
+@media (max-width: 1024px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-center {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  .navbar ul {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+
+  .project-card {
+    width: 80%; /* Reduz a largura para caber em telas menores */
+    margin-left: 0; /* Centraliza o cartão */
+  }
+
+  .rules-container {
+    flex-direction: column; /* Empilha as colunas de regras */
+  }
+
+  .rules-left,
+  .rules-right {
+    margin: 0 0 20px; /* Espaçamento entre as colunas */
+  }
+
+  footer .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Responsividade para Smartphones */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column; /* Empilha os links */
+    gap: 5px;
+  }
+
+  .navbar-icons {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .project-section {
+    align-items: center; /* Centraliza os projetos */
+  }
+
+  .project-card {
+    width: 90%; /* Aumenta a largura para ocupar mais espaço */
+  }
+
+  .rules-container {
+    flex-direction: column;
+  }
+
+  .rules-list {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+  }
+
+  .rules-section {
+    padding: 15px;
+  }
+
+  footer .footer-content {
+    gap: 5px;
+  }
+}
+
+/* Responsividade para Telas Muito Pequenas */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 10px;
+  }
+
+  .navbar ul {
+    text-align: center; /* Centraliza os links */
+    gap: 5px;
+  }
+
+  .navbar ul li a {
+    font-size: 14px; /* Reduz o tamanho da fonte */
+    padding: 8px 10px;
+  }
+
+  .project-card {
+    width: 95%; /* Maximiza o uso do espaço */
+  }
+
+  h3 {
+    font-size: 18px; /* Ajusta o tamanho do cabeçalho */
+  }
+
+  p {
+    font-size: 14px; /* Reduz tamanho do texto */
+  }
+
+  .upload {
+    font-size: 14px; /* Reduz o botão de upload */
+    padding: 8px 30px;
+  }
+
+  footer {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  footer .links a {
+    margin-right: 10px;
+    font-size: 12px; /* Ajusta o tamanho dos links */
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Fortes Engenharia</title>
+    <link rel="stylesheet" href="c_login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-panel"></div>
+
+      <div class="right-panel">
+        <div class="form-container">
+          <img src="./IMAGENS/LOGO FORTES.png" alt="100px" />
+          <h1>LOGIN</h1>
+
+          <p class="subtext">TIPO DE CONTA: PARCEIRO</p>
+
+          <script>
+            function validarFormulario() {
+              const email = document.querySelector('input[type="email"]').value;
+              const senha = document.querySelector(
+                'input[type="password"]'
+              ).value;
+
+              // Credenciais predefinidas
+              const usuarioCorreto = "administrador";
+              const senhaCorreta = "adm123";
+
+              // Verificação
+              if (email === usuarioCorreto && senha === senhaCorreta) {
+                // Redireciona para a página inicial
+                window.location.href = "P.inicial.html";
+              } else {
+                // Exibe uma mensagem de erro
+                alert("Usuário ou senha incorretos!");
+              }
+            }
+          </script>
+
+          <form>
+            <input type="email" placeholder="Usuário" required />
+            <input type="password" placeholder="Senha" required />
+            <button type="button" onclick="validarFormulario()">LOGIN</button>
+            <a href="./P.cadastro.html">
+              <button type="button" type="button">REGISTRAR-SE</button>
+            </a>
+          </form>
+
+          <a href="começo.html" class="help-link">AJUDA?</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./p_login.js"></script>
+  </body>
+</html>

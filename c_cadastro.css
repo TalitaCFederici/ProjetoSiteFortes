@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0f4a5a;
+}
+
+.container {
+  display: flex;
+  width: 90%;
+  max-width: 1200px;
+  height: 600px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.left-panel {
+  flex: 1;
+  background: url("IMAGENS/image1.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.right-panel {
+  flex: 1;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.subtext {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+}
+
+button {
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #0f4a5a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #09738c;
+}
+
+.help-link {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #0f4a5a;
+  text-decoration: none;
+}
+
+.help-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left-panel {
+    height: 300px;
+    background-position: top;
+  }
+
+  .right-panel {
+    height: auto;
+    padding: 20px;
+  }
+
+  .form-container {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .subtext {
+    font-size: 0.85rem;
+  }
+
+  input,
+  button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  button {
+    border-radius: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    height: auto;
+    padding: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+  }
+
+  .left-panel {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .right-panel {
+    padding: 15px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .subtext {
+    font-size: 0.8rem;
+  }
+
+  input,
+  button {
+    font-size: 0.8rem;
+    padding: 7px;
+  }
+
+  button {
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+
+  .help-link {
+    font-size: 0.8rem;
+  }
+}
